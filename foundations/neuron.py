@@ -17,7 +17,7 @@ class Solution:
         if activation == 'sigmoid':
             result =  1 / (1 + np.exp(-z))
         else:
-            result =  max(0.0, z)
+            result =  np.maximum(0.0, z)
 
         return np.round(result,5)
 
